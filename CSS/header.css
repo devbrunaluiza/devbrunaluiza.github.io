@@ -1,0 +1,47 @@
+ul {
+   list-style: none;
+}
+
+
+.header-menu a {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 20px;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+max-width: 1200px;
+margin: 0 auto;
+/* ele sua o padding pra desgrudar o conteudo das bordas iniciais */
+padding: 40px 20px;
+}
+
+.header-menu  {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* já ajustando os itens aos centro para quando diminuir a tela ele ficar responsivo já no centro */
+  justify-content: center;
+}
+
+
+@media (max-width: 1200px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }  
+  .header-menu a {
+    background: #f5f5f5;
+    padding: 05px 20px;
+    border-radius: 5px;
+  }
+  }
+
+
